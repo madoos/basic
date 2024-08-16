@@ -12,13 +12,13 @@ formulario.addEventListener("submit", function (e) {
     let textoResultado = `Tu IMC es ${imc.toFixed(2)}. `;
 
     if (imc < 18.5) {
-      textoResultado += "Estás bajo de peso.";
+      textoResultado += "Estás flaquito.";
     } else if (imc >= 18.5 && imc < 24.9) {
       textoResultado += "Tienes un peso normal.";
     } else if (imc >= 25 && imc < 29.9) {
-      textoResultado += "Estás en sobrepeso.";
+      textoResultado += "Estás gordito.";
     } else {
-      textoResultado += "Tienes obesidad.";
+      textoResultado += "Estás como pirulo.";
     }
 
     resultado.innerText = textoResultado;
